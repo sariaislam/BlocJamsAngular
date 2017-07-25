@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="blocJams">
-<head lang="en">
+  <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Jams Angular</title>
     <meta charset="UTF-8">
@@ -12,18 +12,20 @@
     <link rel="stylesheet" type="text/css" href="styles/collection.css">
     <link rel="stylesheet" type="text/css" href="styles/album.css">
     <link rel="stylesheet" type="text/css" href="styles/player_bar.css">
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar"> <!--navigation bar-->
-        <a href="index.html" class="logo">
-            <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
-        </a>
-        <div class="links-container">
-            <a href="collection.html" class="navbar-link">collection</a>
-        </div>
+      <a href="index.html" class="logo">
+        <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
+      </a>
+      <div class="links-container">
+        <a href="collection.html" class="navbar-link">collection</a>
+      </div>
     </nav>
+    <ui-view></ui-view>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <script src="/scripts/app.js"></script>
-</body>
-    
+  </body>
 </html>
