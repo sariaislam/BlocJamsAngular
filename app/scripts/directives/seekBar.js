@@ -27,6 +27,10 @@
           return percent + "%";
         };
 
+        scope.thumbStyle = function() {
+          return {left: percentString()};
+        };
+
         scope.fillStyle = function() {
           return {width: percentString()};
         };
