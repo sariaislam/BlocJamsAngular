@@ -1,0 +1,8 @@
+<div>
+  <span class="icon ion-volume-high"></span>
+
+  <div class="seek-bar" ng-click="onClickVolumeBar($event)">
+    <div class="fill" ng-style="fillStyle()"></div>
+    <div class="thumb" ng-style="thumbStyle()" ng-mousedown="trackThumb()"></div>
+  </div>
+</div>

@@ -118,6 +118,12 @@
             }
           };
 
+          SongPlayer.setVolume = function(volume) {
+            if (currentBuzzObject) {
+              currentBuzzObject.setVolume(volume);
+            }
+          };
+
           /**
           * @function stopSong
           * @desc Stops the current song
@@ -158,6 +164,12 @@
            * @type {Number}
            */
           SongPlayer.currentTime = null;
+
+          /**
+           * @desc Current volume of currently playing song
+           * @type {Number}
+           */
+          SongPlayer.volume = 50;
 
           return SongPlayer;
      }
